@@ -5,6 +5,9 @@
 
 <p>{{ author.date_of_birth }} {{ author.date_of_death }}</p>
 
+<p><strong>Update author:</strong> <a href="{% url 'author_update' author.pk %}">{{ author }}</a></p>
+<p><strong>Delete author:</strong> <a href="{% url 'author_delete' author.pk %}">{{ author }}</a></p>
+
 <div style="margin-left:20px;margin-top:20px">
     <h4>Books</h4>
 
